@@ -1,0 +1,16 @@
+#! /usr/bin/env python
+#: Title: pyn
+#: Description: Generates a random four digit number that may be used as an Mpesa PIN
+#: Author: "Mwaoshe Njemah" moshe@teketeke.co.ke
+#: Date: 4th  May 2016
+#: Version: 1
+def mpesaPin():
+	import random
+
+	while True:
+		seed = 10000
+		x = int(random.random()* seed)
+		if len(str(x)) == 4: break
+
+	print(x)
+mpesaPin()
